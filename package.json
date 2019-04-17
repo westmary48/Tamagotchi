@@ -1,0 +1,27 @@
+{
+  "name": "Tamagotchi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/javascripts/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production --module-bind js=babel-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westmary48/Tamagotchi.git"
+  },
+  "keywords": [],
+  "author": "Mary West",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/westmary48/Tamagotchi/issues"
+  },
+  "homepage": "https://github.com/westmary48/Tamagotchi#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0"
+  }
+}
