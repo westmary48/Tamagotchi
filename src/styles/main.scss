@@ -1,3 +1,23 @@
+@import '_colors.scss';
+
 body {
   background-color: blue;
+}
+
+
+#app{
+  #eat {
+    $eat: #00FF00	;
+  }
+
+  #play {
+    $play: #f6ef4c;
+  }
+
+;  #fight {
+    $fight: #BF3EFF;
+  }
+  #sleep {
+    $sleep:#0BB5FF;
+  }
 }
