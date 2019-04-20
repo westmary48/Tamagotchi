@@ -25,12 +25,11 @@ const fightButtonEvents = () => {
 
 const fightDomStringBuilder = () => {
   let domString = '';
-    domString += `<h3>Fight</h3>`;
-    domString += `<button id = "add-strength-btn">Strength</button>`;
-    domString += `<button id = "subtract-strength-btn">Violence</button>`;
-    domString += `<div id="fight-score">Strength Level: ${strength}</div>`;
-    util.printToDom('fight', domString);
-    fightButtonEvents();
-
-  };
-export default { fightDomStringBuilder }
+  domString += `<h3>Fight</h3>`;
+  domString += `<button id='add-strength-btn'>Strength</button>`;
+  domString += `<button id='subtract-strength-btn'>Violence</button>`;
+  domString += `<div id='fight-score'>Strength Level: ${strength}</div>`;
+  util.printToDom('fight', domString);
+  fightButtonEvents();
+};
+export default { fightDomStringBuilder };
