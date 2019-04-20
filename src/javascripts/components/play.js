@@ -7,7 +7,7 @@ const funDomStringBuilder = () => {
     domString += `<h3>Play</h3>`;
     domString += `<button>Fun</button>`;
     domString += `<button>Not Fun</button>`;
-    util.printToDom('fight', domString);
+    util.printToDom('play', domString);
   };
 
   export default { funDomStringBuilder }
