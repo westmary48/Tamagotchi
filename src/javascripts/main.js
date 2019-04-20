@@ -9,7 +9,7 @@ const init = () => {
   eat.eatDomStringBuilder();
   fight.fightDomStringBuilder();
   play.funDomStringBuilder();
-  sleep.sleepDomStringBuilder();
+  sleep.energyDomStringBuilder();
 };
 
 init();

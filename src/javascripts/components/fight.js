@@ -3,7 +3,7 @@ import util from '../helpers/util';
 let strength = 100;
 
 const strengthAddPoints = () => {
-  strength += 10;
+  strength += 1;
   if (strength > 100) {
     strength = 100;
   }
@@ -11,7 +11,7 @@ const strengthAddPoints = () => {
 };
 
 const subtractStrengthPoints = () => {
-  strength -= 3;
+  strength -= 10;
   if (strength < 0) {
     strength = 0;
   }

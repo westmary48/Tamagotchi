@@ -1,37 +1,37 @@
 import util from '../helpers/util';
 
-let sleep = 100;
+let energy = 50;
 
-const sleepAddPoints = () => {
-  sleep += 10;
-  if (sleep > 100) {
-    sleep = 100;
+const napPoints = () => {
+  energy += 50;
+  if (energy > 100) {
+    energy = 100;
   }
-  util.printToDom('sleep-score', sleep);
+  util.printToDom('energy-score', energy);
 };
 
-const subtractSleepPoints = () => {
-  sleep -= 3;
-  if (sleep < 0) {
-    sleep = 0;
+const deepSlumberPoints = () => {
+  energy += 60;
+  if (energy > 100) {
+    energy = 100;
   }
-  util.printToDom('sleep-score', sleep);
+  util.printToDom('energy-score', energy);
 };
 
-const sleepButtonEvents = () => {
-  document.getElementById('add-sleep-btn').addEventListener('click', sleepAddPoints);
-  document.getElementById('subtract-sleep-btn').addEventListener('click', subtractSleepPoints);
+const energyButtonEvents = () => {
+  document.getElementById('add-energy-btn').addEventListener('click', napPoints);
+  document.getElementById('subtract-energy-btn').addEventListener('click', deepSlumberPoints);
 };
 
-const sleepDomStringBuilder = () => {
+const energyDomStringBuilder = () => {
   let domString = '';
-    domString += `<h3>Sleep</h3>`;
-    domString += `<button id = "add-sleep-btn">Rested</button>`;
-    domString += `<button id = "subtract-sleep-btn">Tired</button>`;
-    domString += `<div id="sleep-score">sleep Level: ${sleep}</div>`;
+    domString += `<h3>energy</h3>`;
+    domString += `<button id = "add-energy-btn">Nap</button>`;
+    domString += `<button id = "subtract-energy-btn">Deep Slumber</button>`;
+    domString += `<div id="energy-score">Energy Level: ${energy}</div>`;
     util.printToDom('sleep', domString);
-    sleepButtonEvents();
+    energyButtonEvents();
 
   };
-export default { sleepDomStringBuilder }
+export default { energyDomStringBuilder }
 
