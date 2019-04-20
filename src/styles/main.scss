@@ -1,7 +1,5 @@
-@import '_colors.scss';
-
 body {
-  background-color: $background;
+  background-color: white;
 }
 
 #app {
@@ -9,24 +7,24 @@ body {
   flex-flow: row wrap;
 
   #eat {
-    $eat: #00FF00;
+    background-color: #00FF00;
     width: 48%;
     height: 400px;
   }
 
   #play {
-    $play: #f6ef4c;
+    background-color: #f6ef4c;
     width: 48%;
     height: 400px;
   }
 
  #fight {
-    $fight: #BF3EFF;
+    background-color: #BF3EFF;
     width: 48%;
     height: 400px;
   }
   #sleep {
-    $sleep:#0BB5FF;
+    background-color:#0BB5FF;
     width: 48%;
     height: 400px;
   }
