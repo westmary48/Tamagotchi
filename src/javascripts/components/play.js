@@ -25,9 +25,9 @@ const funButtonEvents = () => {
 
 const funDomStringBuilder = () => {
   let domString = '';
-  domString += `<h3>Fun</h3>`;
-  domString += `<button id='add-super-fun-btn'>Super Fun!</button>`;
-  domString += `<button id='add-fun-btn'>Fun</button>`;
+  domString += '<h3>Fun</h3>';
+  domString += '<button id="add-super-fun-btn">Super Fun!</button>';
+  domString += '<button id="add-fun-btn">Fun</button>';
   domString += `<div id='fun-score'>Fun Level: ${fun}</div>`;
   util.printToDom('play', domString);
   funButtonEvents();

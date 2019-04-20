@@ -25,9 +25,9 @@ const energyButtonEvents = () => {
 
 const energyDomStringBuilder = () => {
   let domString = '';
-  domString += `<h3>Energy</h3>`;
-  domString += `<button id='add-energy-btn'>Nap</button>`;
-  domString += `<button id='subtract-energy-btn'>Deep Slumber</button>`;
+  domString += '<h3>Energy</h3>';
+  domString += '<button id="add-energy-btn">Nap</button>';
+  domString += '<button id="subtract-energy-btn">Deep Slumber</button>';
   domString += `<div id='energy-score'>Energy Level: ${energy}</div>`;
   util.printToDom('sleep', domString);
   energyButtonEvents();
