@@ -25,12 +25,11 @@ const eatButtonEvents = () => {
 
 const eatDomStringBuilder = () => {
   let domString = '';
-    domString += `<h3>Eat</h3>`;
-    domString += `<button id = "add-full-btn">Full</button>`;
-    domString += `<button id = "subtract-full-btn">Starving</button>`;
-    domString += `<div id="full-score">Full Level: ${full}</div>`;
-    util.printToDom('eat', domString);
-    eatButtonEvents();
-
-  };
-export default { eatDomStringBuilder }
+  domString += '<h3>Eat</h3>';
+  domString += '<button id="add-full-btn">Full</button>';
+  domString += '<button id="subtract-full-btn">Starving</button>';
+  domString += `<div id='full-score'>Full Level: ${full}</div>`;
+  util.printToDom('eat', domString);
+  eatButtonEvents();
+};
+export default { eatDomStringBuilder };
